@@ -8,7 +8,7 @@
 
 #import "BaseNavgationController.h"
 #import "UIBarButtonItem+Extension.h"
-
+#import "UIImage+Extension.h"
 @interface BaseNavgationController ()<UIGestureRecognizerDelegate,UINavigationControllerDelegate>
 
 
@@ -39,13 +39,13 @@
     UINavigationBar *navBar = [UINavigationBar appearance];
     
     if (!([UIDevice currentDevice].systemVersion.doubleValue >= 7.0)) {
-        [navBar setBackgroundImage:[UIImage imageNamed:@"NaviBar"] forBarMetrics:UIBarMetricsDefault];
+        [navBar setBackgroundImage:[UIImage resizableImage:@"nav_bg"] forBarMetrics:UIBarMetricsDefault];
         
     }
-    
+    [navBar setBackgroundImage:[UIImage resizableImage:@"nav_bg"] forBarMetrics:UIBarMetricsDefault];
     // title
     NSMutableDictionary *attribute = [NSMutableDictionary dictionary];
-    attribute[NSForegroundColorAttributeName] =[UIColor whiteColor] ;
+    attribute[NSForegroundColorAttributeName] =[UIColor blackColor] ;
     attribute[NSFontAttributeName] = [UIFont systemFontOfSize:20];
     attribute[UITextAttributeTextShadowOffset] = [NSValue valueWithUIOffset:UIOffsetZero];
     
@@ -93,6 +93,8 @@
             // 隐藏tabbar
             viewController.hidesBottomBarWhenPushed = YES;
             
+            viewController.navigationController.navigationBar.barTintColor = [UIColor blackColor];
+            
             if (([[[ UIDevice currentDevice ] systemVersion ] floatValue ]>= 7.0 ? 20 : 0 ))
             {
                 UIBarButtonItem *negativeSpacer = [[ UIBarButtonItem alloc ] initWithBarButtonSystemItem : UIBarButtonSystemItemFixedSpace
@@ -101,12 +103,12 @@
                 
                 negativeSpacer. width = - 20 ;//这个数值可以根据情况自由变化
                 
-                viewController.navigationItem.leftBarButtonItems = @[ negativeSpacer,[UIBarButtonItem barButtonItemWithNorImageName:@"back" highImageName:@"back" target:self action:@selector(back)]];
+                viewController.navigationItem.leftBarButtonItems = @[ negativeSpacer,[UIBarButtonItem barButtonItemWithNorImageName:@"nav_back" highImageName:@"nav_back" target:self action:@selector(back)]];
                 
             }
             else
                 
-                viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithNorImageName:@"back" highImageName:@"back" target:self action:@selector(back)];
+                viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithNorImageName:@"nav_back" highImageName:@"nav_back" target:self action:@selector(back)];
         }
         
         
