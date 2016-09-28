@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
-@interface ForthViewController : ViewController
+#import "BaseViewController.h"
+@interface ForthViewController : BaseViewController
 
 @end

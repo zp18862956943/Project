@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
-@interface FirstViewController : ViewController
+#import "BaseViewController.h"
+@interface FirstViewController :BaseViewController
 
 @end

@@ -19,6 +19,7 @@
     self.navigationItem.title = @"4";
     self.view.backgroundColor = [UIColor blackColor];
     
+    
 }
 
 

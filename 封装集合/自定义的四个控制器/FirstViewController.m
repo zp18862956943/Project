@@ -34,4 +34,23 @@
     [self.navigationController pushViewController:sec animated:true];
 }
 
+
+-(UIButton *)set_leftButton
+{
+//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    btn.frame = CGRectMake(0, 0, 40, 40);
+//    [btn setTitle:@"确定" forState:UIControlStateNormal];
+//    [btn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+    
+    UIButton *btn = [BaseButton createBtnTitle:@"确定" titleColor:[UIColor blackColor] bgImageName:nil backGroundColor:[UIColor grayColor] target:nil action:nil];
+    btn.frame = CGRectMake(0, -10, 40, 60);
+    return btn;
+}
+
+
+-(void)left_button_event:(UIButton *)sender
+{
+    NSLog(@"dasd");
+}
+
 @end
