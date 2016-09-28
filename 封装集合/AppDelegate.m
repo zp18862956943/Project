@@ -45,7 +45,7 @@
         return;
     }
     BBUserDefault.isNoFirstLaunch=YES;
-    NSArray *images=@[@"introductoryPage1",@"introductoryPage3",@"introductoryPage4",@"introductoryPage2"];
+    NSArray *images=@[@"introductoryPage1",@"introductoryPage2",@"introductoryPage3",@"introductoryPage4"];
     [introductoryPagesHelper showIntroductoryPageView:images];
 }
 
