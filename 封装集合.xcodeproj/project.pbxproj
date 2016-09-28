@@ -56,6 +56,19 @@
 		40A0DBFF1D9A668900ACCCC7 /* GVUserDefaults+BBProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A0DBFE1D9A668900ACCCC7 /* GVUserDefaults+BBProperties.m */; };
 		40A0DC051D9A681500ACCCC7 /* introductoryPagesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A0DC021D9A681500ACCCC7 /* introductoryPagesHelper.m */; };
 		40A0DC061D9A681500ACCCC7 /* introductoryPagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A0DC041D9A681500ACCCC7 /* introductoryPagesView.m */; };
+		40F42AF51D9B7E2000D79FB5 /* CYLPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F42AEE1D9B7E2000D79FB5 /* CYLPlusButton.m */; };
+		40F42AF61D9B7E2000D79FB5 /* CYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F42AF01D9B7E2000D79FB5 /* CYLTabBar.m */; };
+		40F42AF71D9B7E2000D79FB5 /* CYLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F42AF21D9B7E2000D79FB5 /* CYLTabBarController.m */; };
+		40F42AF81D9B7E2000D79FB5 /* UIViewController+CYLTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F42AF41D9B7E2000D79FB5 /* UIViewController+CYLTabBarControllerExtention.m */; };
+		40F42AFB1D9B7EF700D79FB5 /* BaseNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F42AFA1D9B7EF700D79FB5 /* BaseNavgationController.m */; };
+		40F42AFE1D9B7F2800D79FB5 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F42AFD1D9B7F2800D79FB5 /* BaseTabBarController.m */; };
+		40F42B061D9B7FAB00D79FB5 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F42B011D9B7FAB00D79FB5 /* UIBarButtonItem+Extension.m */; };
+		40F42B071D9B7FAB00D79FB5 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F42B031D9B7FAB00D79FB5 /* UIImage+Extension.m */; };
+		40F42B081D9B7FAB00D79FB5 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F42B051D9B7FAB00D79FB5 /* UIView+Extension.m */; };
+		40F42B0C1D9B80EF00D79FB5 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F42B0B1D9B80EF00D79FB5 /* FirstViewController.m */; };
+		40F42B0F1D9B80FC00D79FB5 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F42B0E1D9B80FC00D79FB5 /* SecondViewController.m */; };
+		40F42B121D9B810900D79FB5 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F42B111D9B810900D79FB5 /* ThirdViewController.m */; };
+		40F42B151D9B811400D79FB5 /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F42B141D9B811400D79FB5 /* ForthViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +190,34 @@
 		40A0DC021D9A681500ACCCC7 /* introductoryPagesHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = introductoryPagesHelper.m; sourceTree = "<group>"; };
 		40A0DC031D9A681500ACCCC7 /* introductoryPagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = introductoryPagesView.h; sourceTree = "<group>"; };
 		40A0DC041D9A681500ACCCC7 /* introductoryPagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = introductoryPagesView.m; sourceTree = "<group>"; };
+		40F42AEC1D9B7E2000D79FB5 /* CYLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLConstants.h; sourceTree = "<group>"; };
+		40F42AED1D9B7E2000D79FB5 /* CYLPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLPlusButton.h; sourceTree = "<group>"; };
+		40F42AEE1D9B7E2000D79FB5 /* CYLPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLPlusButton.m; sourceTree = "<group>"; };
+		40F42AEF1D9B7E2000D79FB5 /* CYLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTabBar.h; sourceTree = "<group>"; };
+		40F42AF01D9B7E2000D79FB5 /* CYLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBar.m; sourceTree = "<group>"; };
+		40F42AF11D9B7E2000D79FB5 /* CYLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTabBarController.h; sourceTree = "<group>"; };
+		40F42AF21D9B7E2000D79FB5 /* CYLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBarController.m; sourceTree = "<group>"; };
+		40F42AF31D9B7E2000D79FB5 /* UIViewController+CYLTabBarControllerExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CYLTabBarControllerExtention.h"; sourceTree = "<group>"; };
+		40F42AF41D9B7E2000D79FB5 /* UIViewController+CYLTabBarControllerExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CYLTabBarControllerExtention.m"; sourceTree = "<group>"; };
+		40F42AF91D9B7EF700D79FB5 /* BaseNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavgationController.h; sourceTree = "<group>"; };
+		40F42AFA1D9B7EF700D79FB5 /* BaseNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavgationController.m; sourceTree = "<group>"; };
+		40F42AFC1D9B7F2800D79FB5 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		40F42AFD1D9B7F2800D79FB5 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		40F42B001D9B7FAB00D79FB5 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		40F42B011D9B7FAB00D79FB5 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		40F42B021D9B7FAB00D79FB5 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		40F42B031D9B7FAB00D79FB5 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		40F42B041D9B7FAB00D79FB5 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		40F42B051D9B7FAB00D79FB5 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		40F42B0A1D9B80EF00D79FB5 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		40F42B0B1D9B80EF00D79FB5 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		40F42B0D1D9B80FC00D79FB5 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		40F42B0E1D9B80FC00D79FB5 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		40F42B101D9B810900D79FB5 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		40F42B111D9B810900D79FB5 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		40F42B131D9B811400D79FB5 /* ForthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForthViewController.h; sourceTree = "<group>"; };
+		40F42B141D9B811400D79FB5 /* ForthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForthViewController.m; sourceTree = "<group>"; };
+		40F42B161D9B89FB00D79FB5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +268,8 @@
 		4069EE171D9A10C000647E92 /* 封装集合 */ = {
 			isa = PBXGroup;
 			children = (
+				40F42B091D9B80C100D79FB5 /* 自定义的四个控制器 */,
+				40F42AFF1D9B7F8C00D79FB5 /* 拓展Extension */,
 				4069EEBA1D9A4EF200647E92 /* 工具类封装 */,
 				4069EE821D9A4D3600647E92 /* 第三方 */,
 				4069EE7B1D9A4C7400647E92 /* 基本UI控件创建 */,
@@ -234,7 +277,12 @@
 				4069EE1C1D9A10C100647E92 /* AppDelegate.m */,
 				4069EE1E1D9A10C100647E92 /* ViewController.h */,
 				4069EE1F1D9A10C100647E92 /* ViewController.m */,
+				40F42AF91D9B7EF700D79FB5 /* BaseNavgationController.h */,
+				40F42AFA1D9B7EF700D79FB5 /* BaseNavgationController.m */,
+				40F42AFC1D9B7F2800D79FB5 /* BaseTabBarController.h */,
+				40F42AFD1D9B7F2800D79FB5 /* BaseTabBarController.m */,
 				40A0DBF61D9A5E8400ACCCC7 /* Configure.h */,
+				40F42B161D9B89FB00D79FB5 /* PrefixHeader.pch */,
 				4069EE211D9A10C100647E92 /* Main.storyboard */,
 				4069EE241D9A10C100647E92 /* Assets.xcassets */,
 				4069EE261D9A10C100647E92 /* LaunchScreen.storyboard */,
@@ -284,6 +332,7 @@
 		4069EE821D9A4D3600647E92 /* 第三方 */ = {
 			isa = PBXGroup;
 			children = (
+				40F42AEB1D9B7E2000D79FB5 /* CYLTabBarController */,
 				40A0DBBE1D9A55DE00ACCCC7 /* IQKeyboardManager */,
 				4069EE831D9A4D3600647E92 /* AFNetworking */,
 			);
@@ -497,6 +546,50 @@
 			path = IntroductoryPages;
 			sourceTree = "<group>";
 		};
+		40F42AEB1D9B7E2000D79FB5 /* CYLTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				40F42AEC1D9B7E2000D79FB5 /* CYLConstants.h */,
+				40F42AED1D9B7E2000D79FB5 /* CYLPlusButton.h */,
+				40F42AEE1D9B7E2000D79FB5 /* CYLPlusButton.m */,
+				40F42AEF1D9B7E2000D79FB5 /* CYLTabBar.h */,
+				40F42AF01D9B7E2000D79FB5 /* CYLTabBar.m */,
+				40F42AF11D9B7E2000D79FB5 /* CYLTabBarController.h */,
+				40F42AF21D9B7E2000D79FB5 /* CYLTabBarController.m */,
+				40F42AF31D9B7E2000D79FB5 /* UIViewController+CYLTabBarControllerExtention.h */,
+				40F42AF41D9B7E2000D79FB5 /* UIViewController+CYLTabBarControllerExtention.m */,
+			);
+			path = CYLTabBarController;
+			sourceTree = "<group>";
+		};
+		40F42AFF1D9B7F8C00D79FB5 /* 拓展Extension */ = {
+			isa = PBXGroup;
+			children = (
+				40F42B001D9B7FAB00D79FB5 /* UIBarButtonItem+Extension.h */,
+				40F42B011D9B7FAB00D79FB5 /* UIBarButtonItem+Extension.m */,
+				40F42B021D9B7FAB00D79FB5 /* UIImage+Extension.h */,
+				40F42B031D9B7FAB00D79FB5 /* UIImage+Extension.m */,
+				40F42B041D9B7FAB00D79FB5 /* UIView+Extension.h */,
+				40F42B051D9B7FAB00D79FB5 /* UIView+Extension.m */,
+			);
+			path = "拓展Extension";
+			sourceTree = "<group>";
+		};
+		40F42B091D9B80C100D79FB5 /* 自定义的四个控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				40F42B0A1D9B80EF00D79FB5 /* FirstViewController.h */,
+				40F42B0B1D9B80EF00D79FB5 /* FirstViewController.m */,
+				40F42B0D1D9B80FC00D79FB5 /* SecondViewController.h */,
+				40F42B0E1D9B80FC00D79FB5 /* SecondViewController.m */,
+				40F42B101D9B810900D79FB5 /* ThirdViewController.h */,
+				40F42B111D9B810900D79FB5 /* ThirdViewController.m */,
+				40F42B131D9B811400D79FB5 /* ForthViewController.h */,
+				40F42B141D9B811400D79FB5 /* ForthViewController.m */,
+			);
+			path = "自定义的四个控制器";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -633,11 +726,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F42AF81D9B7E2000D79FB5 /* UIViewController+CYLTabBarControllerExtention.m in Sources */,
+				40F42B061D9B7FAB00D79FB5 /* UIBarButtonItem+Extension.m in Sources */,
 				40A0DBE91D9A55DF00ACCCC7 /* IQKeyboardManager.m in Sources */,
+				40F42AF51D9B7E2000D79FB5 /* CYLPlusButton.m in Sources */,
 				40A0DBEB1D9A55DF00ACCCC7 /* IQTextView.m in Sources */,
+				40F42B071D9B7FAB00D79FB5 /* UIImage+Extension.m in Sources */,
 				40A0DBEC1D9A55DF00ACCCC7 /* IQBarButtonItem.m in Sources */,
+				40F42B0C1D9B80EF00D79FB5 /* FirstViewController.m in Sources */,
 				40A0DBE31D9A55DF00ACCCC7 /* IQNSArray+Sort.m in Sources */,
 				4069EEB71D9A4D3600647E92 /* UIProgressView+AFNetworking.m in Sources */,
+				40F42B151D9B811400D79FB5 /* ForthViewController.m in Sources */,
 				40A0DBE71D9A55DF00ACCCC7 /* IQUIViewController+Additions.m in Sources */,
 				40A0DBE81D9A55DF00ACCCC7 /* IQUIWindow+Hierarchy.m in Sources */,
 				4069EEB51D9A4D3600647E92 /* UIButton+AFNetworking.m in Sources */,
@@ -658,17 +757,24 @@
 				4069EEB01D9A4D3600647E92 /* README.md in Sources */,
 				4069EEAA1D9A4D3600647E92 /* AFNetworkReachabilityManager.m in Sources */,
 				4069EEB11D9A4D3600647E92 /* AFAutoPurgingImageCache.m in Sources */,
+				40F42AF71D9B7E2000D79FB5 /* CYLTabBarController.m in Sources */,
+				40F42AFE1D9B7F2800D79FB5 /* BaseTabBarController.m in Sources */,
+				40F42B121D9B810900D79FB5 /* ThirdViewController.m in Sources */,
 				40A0DC051D9A681500ACCCC7 /* introductoryPagesHelper.m in Sources */,
 				40A0DBF01D9A55DF00ACCCC7 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				4069EEAB1D9A4D3600647E92 /* AFSecurityPolicy.m in Sources */,
 				40A0DBEF1D9A55DF00ACCCC7 /* IQToolbar.m in Sources */,
+				40F42AF61D9B7E2000D79FB5 /* CYLTabBar.m in Sources */,
 				40A0DBE61D9A55DF00ACCCC7 /* IQUIView+Hierarchy.m in Sources */,
 				40A0DBE51D9A55DF00ACCCC7 /* IQUITextFieldView+Additions.m in Sources */,
 				40A0DBEA1D9A55DF00ACCCC7 /* IQKeyboardReturnKeyHandler.m in Sources */,
+				40F42B081D9B7FAB00D79FB5 /* UIView+Extension.m in Sources */,
+				40F42B0F1D9B80FC00D79FB5 /* SecondViewController.m in Sources */,
 				40A0DBE41D9A55DF00ACCCC7 /* IQUIScrollView+Additions.m in Sources */,
 				4069EEC21D9A4EF200647E92 /* UIImage+Compression.m in Sources */,
 				4069EEA91D9A4D3600647E92 /* AFHTTPSessionManager.m in Sources */,
 				4069EEB21D9A4D3600647E92 /* AFImageDownloader.m in Sources */,
+				40F42AFB1D9B7EF700D79FB5 /* BaseNavgationController.m in Sources */,
 				4069EE801D9A4C7400647E92 /* BaseButton.m in Sources */,
 				4069EEB91D9A4D3600647E92 /* UIWebView+AFNetworking.m in Sources */,
 				4069EE1A1D9A10C100647E92 /* main.m in Sources */,
@@ -829,6 +935,8 @@
 				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8MXW9M63S4;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/封装集合/PrefixHeader.pch";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "封装集合/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -847,6 +955,8 @@
 				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8MXW9M63S4;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/封装集合/PrefixHeader.pch";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "封装集合/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

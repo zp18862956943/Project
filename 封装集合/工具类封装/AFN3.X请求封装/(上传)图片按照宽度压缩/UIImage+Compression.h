@@ -12,7 +12,7 @@
 /**
  *  图片压缩
  *
- *  @param sourceImg   被压缩的图片
+ *  @param sourceImage   被压缩的图片
  *  @param defineWidth 被压缩的尺寸(宽)
  *
  *  @return 被压缩的图片

@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import "GVUserDefaults+BBProperties.h"
 #import "introductoryPagesHelper.h"
+#import "BaseTabBarController.h"
 @interface AppDelegate ()
 
 @end
@@ -22,7 +23,7 @@
     //加载页面
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    [self setupLoginViewController];
+    [self setupHomeViewController];
     
     //引导页面加载
     [self setupIntroductoryPage];
@@ -30,10 +31,11 @@
     return YES;
 }
 
--(void)setupLoginViewController
+//首页
+-(void)setupHomeViewController
 {
-    ViewController *logInVc = [[ViewController alloc]init];
-    self.window.rootViewController = logInVc;
+    BaseTabBarController *tabBarController = [[BaseTabBarController alloc] init];
+    [self.window setRootViewController:tabBarController];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 }

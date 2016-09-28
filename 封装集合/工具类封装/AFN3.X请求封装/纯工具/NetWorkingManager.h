@@ -48,7 +48,7 @@ typedef NS_ENUM(NSUInteger, HTTPMethod) {
  *
  *  @param path           请求的地址
  *  @param paramters      请求的参数
- *  @param uploadProgress 进度
+ *  @param upLoadProgress 进度
  *  @param success        请求成功的回调
  *  @param failure        请求失败的回调
  */
