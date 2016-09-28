@@ -10,12 +10,17 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7E552112-B335-4692-82D9-1D8E18E6D370",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "08e38b45-f842-4946-bcab-e71ddecc8284++1085" : "%E5%B0%81%E8%A3%85%E9%9B%86%E5%90%88\/"
+    "08e38b45-f842-4946-bcab-e71ddecc8284++1085" : "Project\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "封装集合",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "封装集合.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zp18862956943\/Project.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "08e38b45-f842-4946-bcab-e71ddecc8284++1085"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/code.taobao.org\/svn\/iOSManager",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
