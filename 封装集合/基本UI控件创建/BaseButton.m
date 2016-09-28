@@ -23,6 +23,7 @@
     
     [btn setTitle:title forState:UIControlStateNormal];
     
+    btn.titleLabel.font = CHINESE_SYSTEM(12.0f);
     [btn setTitleColor:titleColor forState:UIControlStateNormal];
     
     if (bgImageName.length == 0 ||bgImageName == nil) {

@@ -42,8 +42,8 @@
 //    [btn setTitle:@"确定" forState:UIControlStateNormal];
 //    [btn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
     
-    UIButton *btn = [BaseButton createBtnTitle:@"确定" titleColor:[UIColor blackColor] bgImageName:nil backGroundColor:[UIColor grayColor] target:nil action:nil];
-    btn.frame = CGRectMake(0, -10, 40, 60);
+    UIButton *btn = [BaseButton createBtnTitle:@"go" titleColor:[UIColor blackColor] bgImageName:nil backGroundColor:[UIColor grayColor] target:nil action:nil];
+    btn.frame = CGRectMake(0, 0, 30, 30);
     return btn;
 }
 
