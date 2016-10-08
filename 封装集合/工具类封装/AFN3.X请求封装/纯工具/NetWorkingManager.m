@@ -99,7 +99,7 @@ static NetWorkingManager * defualt_shareMananger = nil;
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        NSLog(@"responseObject = %@",responseObject);
+//        NSLog(@"responseObject = %@",responseObject);
         if (success) {
             
             success(YES,responseObject);

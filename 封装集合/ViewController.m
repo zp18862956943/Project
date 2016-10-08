@@ -9,13 +9,13 @@
 #import "ViewController.h"
 #import "BaseLabel.h"
 #import "BaseButton.h"
+#import "CityModel.h"
 
 #import "NetWorkingManager.h"
 
 #import "UserDefaultsTools.h"
 
 @interface ViewController ()
-
 @end
 
 @implementation ViewController
@@ -24,46 +24,48 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor yellowColor];
-    //UI
-//    [self test1];
-   //AFN
-//    [self test2];
+    
+    UILabel *label = [BaseLabel createLabelFrame:CGRectMake(0, 0, 320, 60) text:@"234234234234234444443333333333333333333333333333333333333333333333333333333333332``" font:[UIFont systemFontOfSize:14.0f] color:[UIColor blackColor]];
+    [self.view addSubview:label];
+    
+    UIButton *GETBtn = [BaseButton createBtnTitle:@"Get" titleColor:[UIColor blackColor] bgImageName:nil backGroundColor:[UIColor redColor] target:self action:@selector(clickGet)];
+    GETBtn.frame = CGRectMake(20, 60, 100, 20);
+    [self.view addSubview:GETBtn];
+    
+    
+    UIButton *POSTBtn = [BaseButton createBtnTitle:@"POST" titleColor:[UIColor blackColor] bgImageName:nil backGroundColor:[UIColor redColor] target:self action:@selector(clickPOST)];
+    POSTBtn.frame = CGRectMake(160, 60, 100, 20);
+    [self.view addSubview:POSTBtn];
+    
     
 //NSUserDefault
-    [self test3];
+//    [self test3];
     
 }
-#pragma mark - 基本控件使用
--(void)test1
+
+
+
+-(void)clickGet
 {
-//    UILabel *label = [BaseLabel createLabelFrame:CGRectMake(0, 20, 320, 100) text:@"234234234234234444443333333333333333333333333333333333333333333333333333333333332``" font:[UIFont systemFontOfSize:14.0f] color:[UIColor blackColor]];
-//    [self.view addSubview:label];
-    
-    UIButton *btn = [BaseButton createBtnTitle:@"确认" titleColor:[UIColor blackColor] bgImageName:nil backGroundColor:[UIColor redColor] target:self action:@selector(click)];
-    btn.frame = CGRectMake(20, 60, 100, 20);
-    [self.view addSubview:btn];
-}
--(void)click
-{
-    NSLog(@"3223");
+#pragma mark - GET请求
+    [NetWorkingManager requestGETDataWithPath:@"http://192.168.20.25:8044/City/getcitylist" withParamters:nil withProgress:^(float progress) {
+        
+    } success:^(BOOL isSuccess, id responseObject) {
+        NSArray *cityDicArr = [responseObject objectForKey:@"data"];
+        
+        //转
+        [self dicArrToModelArr:cityDicArr];
+//        NSLog(@"%@",responseObject);
+    } failure:^(NSError *error) {
+        NSLog(@"这是重写的%@",error);
+    }];
 }
 
 
 #pragma mark - 网络请求封装使用
 
--(void)test2
+-(void)clickPOST
 {
-#pragma mark - GET请求
-//    [NetWorkingManager requestGETDataWithPath:@"http://192.168.20.25:8044/City/getcitylist" withParamters:nil withProgress:^(float progress) {
-//        
-//    } success:^(BOOL isSuccess, id responseObject) {
-//        NSLog(@"这是重写的");
-//        NSLog(@"%d",isSuccess);
-//        NSLog(@"%@",responseObject);
-//    } failure:^(NSError *error) {
-//        NSLog(@"这是重写的%@",error);
-//    }];
-    
 #pragma mark - POST传图片数组
     UIImage *image1 = [UIImage imageNamed:@"no_goodsBuy"];
     UIImage *image2 = [UIImage imageNamed:@"no_network"];
@@ -73,7 +75,8 @@
         
     } success:^(BOOL isSuccess, id responseObject) {
         NSLog(@"成功");
-        NSLog(@"responseObject=%@",responseObject);
+   
+        
     } failure:^(NSError *error) {
         
     }];
@@ -88,6 +91,14 @@
     NSString *str = [NSString stringWithFormat:@"%@",[UserDefaultsTools localRead:@"key"]];
     NSLog(@"%@",str);
     
+}
+
+-(void)dicArrToModelArr:(NSArray *)dicArr
+{
+    NSArray *modelArr = [CityModel mj_objectArrayWithKeyValuesArray:dicArr];
+    for (CityModel *model in modelArr) {
+        NSLog(@"\ncityId=%@\ncityPic=%@\ncityName=%@\ncityStatue=%@",model.cityId,model.cityPic,model.cityName,model.cityStatue);
+    }
 }
 
 
