@@ -12,8 +12,9 @@
 #import "CityModel.h"
 #import "UIImage+Color.h"
 #import "NetWorkingManager.h"
-
 #import "UserDefaultsTools.h"
+
+#import "FifthViewController.h"
 
 @interface ViewController ()
 @end
@@ -36,6 +37,10 @@
     UIButton *POSTBtn = [BaseButton createBtnTitle:@"POST" titleColor:[UIColor blackColor] bgImageName:nil backGroundColor:[UIColor redColor] target:self action:@selector(clickPOST)];
     POSTBtn.frame = CGRectMake(160, 60 + 65, 100, 20);
     [self.view addSubview:POSTBtn];
+    
+    UIButton *PUSHBtn = [BaseButton createBtnTitle:@"PUSH" titleColor:[UIColor blackColor] bgImageName:nil backGroundColor:[UIColor redColor] target:self action:@selector(clickPUSH)];
+    PUSHBtn.frame = CGRectMake(100, 60 + 100 , 100, 20);
+    [self.view addSubview:PUSHBtn];
     
     
 //NSUserDefault
@@ -84,6 +89,13 @@
     }];
 }
 
+
+
+-(void)clickPUSH
+{
+    FifthViewController *five = [[FifthViewController alloc]init];
+    [self.navigationController pushViewController:five animated:true];
+}
 #pragma mark - NSUserDefault操作
 -(void)test3
 {
@@ -103,9 +115,13 @@
     }
 }
 
+/**
+ 离开页面导航栏颜色恢复
+
+ @param animated 动画效果
+ */
 -(void)viewWillDisappear:(BOOL)animated
 {
-   
     UIImage *bgimage = [UIImage imageWithColor:[UIColor whiteColor]];
     [self.navigationController.navigationBar setBackgroundImage:bgimage forBarMetrics:UIBarMetricsDefault];
 }

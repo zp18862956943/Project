@@ -48,6 +48,7 @@
 		406D96531DA879BB009B614A /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 406D96471DA879BB009B614A /* NSObject+MJProperty.m */; };
 		406D96541DA879BB009B614A /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 406D96491DA879BB009B614A /* NSString+MJExtension.m */; };
 		406D96581DA87AC8009B614A /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 406D96571DA87AC8009B614A /* CityModel.m */; };
+		406D965B1DA89B25009B614A /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 406D965A1DA89B25009B614A /* FifthViewController.m */; };
 		40A0DBE31D9A55DF00ACCCC7 /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A0DBC11D9A55DE00ACCCC7 /* IQNSArray+Sort.m */; };
 		40A0DBE41D9A55DF00ACCCC7 /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A0DBC31D9A55DE00ACCCC7 /* IQUIScrollView+Additions.m */; };
 		40A0DBE51D9A55DF00ACCCC7 /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A0DBC51D9A55DE00ACCCC7 /* IQUITextFieldView+Additions.m */; };
@@ -237,8 +238,8 @@
 		4069EE191D9A10C100647E92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4069EE1B1D9A10C100647E92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4069EE1C1D9A10C100647E92 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4069EE1E1D9A10C100647E92 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4069EE1F1D9A10C100647E92 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4069EE1E1D9A10C100647E92 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		4069EE1F1D9A10C100647E92 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		4069EE221D9A10C100647E92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4069EE241D9A10C100647E92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4069EE271D9A10C100647E92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -316,6 +317,8 @@
 		406D96491DA879BB009B614A /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
 		406D96561DA87AC8009B614A /* CityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityModel.h; sourceTree = "<group>"; };
 		406D96571DA87AC8009B614A /* CityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityModel.m; sourceTree = "<group>"; };
+		406D96591DA89B25009B614A /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
+		406D965A1DA89B25009B614A /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
 		40A0DBC01D9A55DE00ACCCC7 /* IQNSArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQNSArray+Sort.h"; sourceTree = "<group>"; };
 		40A0DBC11D9A55DE00ACCCC7 /* IQNSArray+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQNSArray+Sort.m"; sourceTree = "<group>"; };
 		40A0DBC21D9A55DE00ACCCC7 /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
@@ -707,8 +710,6 @@
 				4069EE7B1D9A4C7400647E92 /* 基本UI控件创建 */,
 				4069EE1B1D9A10C100647E92 /* AppDelegate.h */,
 				4069EE1C1D9A10C100647E92 /* AppDelegate.m */,
-				4069EE1E1D9A10C100647E92 /* ViewController.h */,
-				4069EE1F1D9A10C100647E92 /* ViewController.m */,
 				40F42AF91D9B7EF700D79FB5 /* BaseNavgationController.h */,
 				40F42AFA1D9B7EF700D79FB5 /* BaseNavgationController.m */,
 				40F42AFC1D9B7F2800D79FB5 /* BaseTabBarController.h */,
@@ -1063,6 +1064,10 @@
 				40F42B141D9B811400D79FB5 /* ForthViewController.m */,
 				40F42B171D9BA56200D79FB5 /* BaseViewController.h */,
 				40F42B181D9BA56200D79FB5 /* BaseViewController.m */,
+				4069EE1E1D9A10C100647E92 /* ViewController.h */,
+				4069EE1F1D9A10C100647E92 /* ViewController.m */,
+				406D96591DA89B25009B614A /* FifthViewController.h */,
+				406D965A1DA89B25009B614A /* FifthViewController.m */,
 			);
 			path = "自定义的四个控制器";
 			sourceTree = "<group>";
@@ -1768,6 +1773,7 @@
 				40A0DBE31D9A55DF00ACCCC7 /* IQNSArray+Sort.m in Sources */,
 				4069EEB71D9A4D3600647E92 /* UIProgressView+AFNetworking.m in Sources */,
 				40F42CAF1D9BAD5B00D79FB5 /* UIView+Visuals.m in Sources */,
+				406D965B1DA89B25009B614A /* FifthViewController.m in Sources */,
 				40F42CC11D9BAD5B00D79FB5 /* WebView+Debug.m in Sources */,
 				40F42B1D1D9BA74C00D79FB5 /* Reachability.m in Sources */,
 				40F42C941D9BAD5B00D79FB5 /* UITableView+FDTemplateLayoutCell.m in Sources */,
