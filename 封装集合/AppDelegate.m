@@ -20,6 +20,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+    //第一次运行获取本地语言，进行设置
+    if (![[NSUserDefaults standardUserDefaults]objectForKey:@"appLanguage"]) {
+        
+        NSArray *languages = [NSLocale preferredLanguages];
+        
+        NSString *language = [languages objectAtIndex:0];
+        
+        if ([language hasPrefix:@"zh-Hans"]) {//开头匹配
+            
+            [[NSUserDefaults standardUserDefaults] setObject:@"zh-Hans" forKey:@"appLanguage"];
+            
+        }else{
+            
+            [[NSUserDefaults standardUserDefaults] setObject:@"en" forKey:@"appLanguage"];
+            
+        }
+        
+    }
+    
     //加载页面
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
@@ -27,6 +46,9 @@
     
     //引导页面加载
     [self setupIntroductoryPage];
+    
+    [self.window makeKeyAndVisible];
+
     
     return YES;
 }
@@ -36,8 +58,7 @@
 {
     BaseTabBarController *tabBarController = [[BaseTabBarController alloc] init];
     [self.window setRootViewController:tabBarController];
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+//    self.window.backgroundColor = [UIColor whiteColor];
 }
 
 -(void)setupIntroductoryPage

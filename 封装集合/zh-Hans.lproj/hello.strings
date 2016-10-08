@@ -1,0 +1,11 @@
+/* 
+  hello.strings
+  封装集合
+
+  Created by 周鹏 on 16/10/8.
+  Copyright © 2016年 周鹏. All rights reserved.
+*/
+"tabbar1" = "hello1";
+"tabbar2" = "hello2";
+"tabbar3" = "hello3";
+"tabbar4" = "hello4";

@@ -12,6 +12,7 @@
 #import "BaseLabel.h"
 #import "BaseButton.h"
 #import "MJExtension.h"
+#import "UserDefaultsTools.h"
 
 //中文字体
 #define CHINESE_FONT_NAME  @"Heiti SC"

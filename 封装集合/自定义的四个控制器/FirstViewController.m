@@ -8,6 +8,7 @@
 
 #import "FirstViewController.h"
 #import "ViewController.h"
+#import "AppDelegate.h"
 @interface FirstViewController ()
 
 @end
@@ -26,12 +27,36 @@
     UIButton *btn = [BaseButton createBtnTitle:@"push" titleColor:[UIColor blackColor] bgImageName:nil backGroundColor:[UIColor grayColor] target:self action:@selector(pushClick)];
     btn.frame = CGRectMake(20, 80, 100, 100);
     [self.view addSubview:btn];
+    
+    UIButton *langurageBtn = [BaseButton createBtnTitle:@"change\nLangurage" titleColor:[UIColor blackColor] bgImageName:nil backGroundColor:[UIColor grayColor] target:self action:@selector(langurageClick)];
+    langurageBtn.frame = CGRectMake(20, 200, 100, 100);
+    [self.view addSubview:langurageBtn];
 }
 
 -(void)pushClick
 {
     ViewController *sec = [[ViewController alloc]init];
     [self.navigationController pushViewController:sec animated:true];
+}
+
+-(void)langurageClick
+{
+    //拿到当前设置语言
+    NSString *langurage = [UserDefaultsTools localRead:@"appLanguage"];
+   
+    if ([langurage hasPrefix:@"zh-Hans"]) {//开头匹配
+        [[NSUserDefaults standardUserDefaults] setObject:@"en" forKey:@"appLanguage"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+
+    }else{
+        [[NSUserDefaults standardUserDefaults] setObject:@"zh-Hans" forKey:@"appLanguage"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+
+    }
+    
+    
+    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    [app setupHomeViewController];
 }
 
 

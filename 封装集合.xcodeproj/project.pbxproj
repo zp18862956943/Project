@@ -49,6 +49,7 @@
 		406D96541DA879BB009B614A /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 406D96491DA879BB009B614A /* NSString+MJExtension.m */; };
 		406D96581DA87AC8009B614A /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 406D96571DA87AC8009B614A /* CityModel.m */; };
 		406D965B1DA89B25009B614A /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 406D965A1DA89B25009B614A /* FifthViewController.m */; };
+		406D966D1DA8C0EF009B614A /* hello.strings in Resources */ = {isa = PBXBuildFile; fileRef = 406D966F1DA8C0EF009B614A /* hello.strings */; };
 		40A0DBE31D9A55DF00ACCCC7 /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A0DBC11D9A55DE00ACCCC7 /* IQNSArray+Sort.m */; };
 		40A0DBE41D9A55DF00ACCCC7 /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A0DBC31D9A55DE00ACCCC7 /* IQUIScrollView+Additions.m */; };
 		40A0DBE51D9A55DF00ACCCC7 /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A0DBC51D9A55DE00ACCCC7 /* IQUITextFieldView+Additions.m */; };
@@ -319,6 +320,10 @@
 		406D96571DA87AC8009B614A /* CityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityModel.m; sourceTree = "<group>"; };
 		406D96591DA89B25009B614A /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
 		406D965A1DA89B25009B614A /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
+		406D96691DA8C074009B614A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		406D966A1DA8C074009B614A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		406D966E1DA8C0EF009B614A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/hello.strings; sourceTree = "<group>"; };
+		406D96701DA8C0FA009B614A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/hello.strings"; sourceTree = "<group>"; };
 		40A0DBC01D9A55DE00ACCCC7 /* IQNSArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQNSArray+Sort.h"; sourceTree = "<group>"; };
 		40A0DBC11D9A55DE00ACCCC7 /* IQNSArray+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQNSArray+Sort.m"; sourceTree = "<group>"; };
 		40A0DBC21D9A55DE00ACCCC7 /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
@@ -716,6 +721,7 @@
 				40F42AFD1D9B7F2800D79FB5 /* BaseTabBarController.m */,
 				40A0DBF61D9A5E8400ACCCC7 /* Configure.h */,
 				40F42B161D9B89FB00D79FB5 /* PrefixHeader.pch */,
+				406D966F1DA8C0EF009B614A /* hello.strings */,
 				4069EE211D9A10C100647E92 /* Main.storyboard */,
 				4069EE241D9A10C100647E92 /* Assets.xcassets */,
 				4069EE261D9A10C100647E92 /* LaunchScreen.storyboard */,
@@ -1688,6 +1694,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 4069EE0C1D9A10C000647E92;
 			productRefGroup = 4069EE161D9A10C000647E92 /* Products */;
@@ -1707,6 +1714,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40F42B231D9BA81300D79FB5 /* LICENSE in Resources */,
+				406D966D1DA8C0EF009B614A /* hello.strings in Resources */,
 				40A0DBF11D9A55DF00ACCCC7 /* IQKeyboardManager.bundle in Resources */,
 				4069EE281D9A10C100647E92 /* LaunchScreen.storyboard in Resources */,
 				4069EE251D9A10C100647E92 /* Assets.xcassets in Resources */,
@@ -1974,6 +1982,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				4069EE221D9A10C100647E92 /* Base */,
+				406D96691DA8C074009B614A /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1982,8 +1991,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				4069EE271D9A10C100647E92 /* Base */,
+				406D966A1DA8C074009B614A /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		406D966F1DA8C0EF009B614A /* hello.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				406D966E1DA8C0EF009B614A /* en */,
+				406D96701DA8C0FA009B614A /* zh-Hans */,
+			);
+			name = hello.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1993,6 +2012,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -2041,6 +2061,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

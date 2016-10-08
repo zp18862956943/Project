@@ -6,6 +6,9 @@
 //  Copyright © 2016年 周鹏. All rights reserved.
 //
 
+//切换语言的地址
+#define Localized(key)  [NSString stringWithFormat:@"%@",[[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"]] ofType:@"lproj"]] localizedStringForKey:(key) value:nil table:@"hello"]]
+
 #import "BaseTabBarController.h"
 #import "BaseNavgationController.h"
 #import "CYLTabBarController.h"
@@ -76,22 +79,22 @@
 //TabBar文字跟图标设置
 - (NSArray *)tabBarItemsAttributesForController {
     NSDictionary *firstTabBarItemsAttributes = @{
-                                                 CYLTabBarItemTitle : @"首页",
+                                                 CYLTabBarItemTitle : Localized(@"tabbar1"),
                                                  CYLTabBarItemImage : @"home_normal",
                                                  CYLTabBarItemSelectedImage : @"home_highlight",
                                                  };
     NSDictionary *secondTabBarItemsAttributes = @{
-                                                  CYLTabBarItemTitle : @"发现",
+                                                  CYLTabBarItemTitle : Localized(@"tabbar2"),
                                                   CYLTabBarItemImage : @"mycity_normal",
                                                   CYLTabBarItemSelectedImage : @"mycity_highlight",
                                                   };
     NSDictionary *thirdTabBarItemsAttributes = @{
-                                                 CYLTabBarItemTitle : @"服务",
+                                                 CYLTabBarItemTitle : Localized(@"tabbar3"),
                                                  CYLTabBarItemImage : @"message_normal",
                                                  CYLTabBarItemSelectedImage : @"message_highlight",
                                                  };
     NSDictionary *fourthTabBarItemsAttributes = @{
-                                                  CYLTabBarItemTitle : @"更多",
+                                                  CYLTabBarItemTitle : Localized(@"tabbar4"),
                                                   CYLTabBarItemImage : @"account_normal",
                                                   CYLTabBarItemSelectedImage : @"account_highlight"
                                                   };

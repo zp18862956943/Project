@@ -25,6 +25,10 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor yellowColor];
+    
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc]initWithString:@"嘻嘻"];
+    [self set_Title:str];
+    
 
     UILabel *label = [BaseLabel createLabelFrame:CGRectMake(0, 65, 320, 60) text:@"234234234234234444443333333333333333333333333333333333333333333333333333333333332``" font:[UIFont systemFontOfSize:14.0f] color:[UIColor blackColor]];
     [self.view addSubview:label];
@@ -126,5 +130,14 @@
     [self.navigationController.navigationBar setBackgroundImage:bgimage forBarMetrics:UIBarMetricsDefault];
 }
 
+/**
+ 拦截标题事件
+ 
+ @param sender view
+ */
+-(void)title_click_event:(UIView *)sender
+{
+    NSLog(@"点击了标题");
+}
 
 @end
