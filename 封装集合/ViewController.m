@@ -10,7 +10,7 @@
 #import "BaseLabel.h"
 #import "BaseButton.h"
 #import "CityModel.h"
-
+#import "UIImage+Color.h"
 #import "NetWorkingManager.h"
 
 #import "UserDefaultsTools.h"
@@ -24,17 +24,17 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor yellowColor];
-    
-    UILabel *label = [BaseLabel createLabelFrame:CGRectMake(0, 0, 320, 60) text:@"234234234234234444443333333333333333333333333333333333333333333333333333333333332``" font:[UIFont systemFontOfSize:14.0f] color:[UIColor blackColor]];
+
+    UILabel *label = [BaseLabel createLabelFrame:CGRectMake(0, 65, 320, 60) text:@"234234234234234444443333333333333333333333333333333333333333333333333333333333332``" font:[UIFont systemFontOfSize:14.0f] color:[UIColor blackColor]];
     [self.view addSubview:label];
     
     UIButton *GETBtn = [BaseButton createBtnTitle:@"Get" titleColor:[UIColor blackColor] bgImageName:nil backGroundColor:[UIColor redColor] target:self action:@selector(clickGet)];
-    GETBtn.frame = CGRectMake(20, 60, 100, 20);
+    GETBtn.frame = CGRectMake(20, 60 + 65, 100, 20);
     [self.view addSubview:GETBtn];
     
     
     UIButton *POSTBtn = [BaseButton createBtnTitle:@"POST" titleColor:[UIColor blackColor] bgImageName:nil backGroundColor:[UIColor redColor] target:self action:@selector(clickPOST)];
-    POSTBtn.frame = CGRectMake(160, 60, 100, 20);
+    POSTBtn.frame = CGRectMake(160, 60 + 65, 100, 20);
     [self.view addSubview:POSTBtn];
     
     
@@ -42,8 +42,10 @@
 //    [self test3];
     
 }
-
-
+-(UIColor *)set_colorBackground
+{
+    return [UIColor redColor];
+}
 
 -(void)clickGet
 {
@@ -99,6 +101,13 @@
     for (CityModel *model in modelArr) {
         NSLog(@"\ncityId=%@\ncityPic=%@\ncityName=%@\ncityStatue=%@",model.cityId,model.cityPic,model.cityName,model.cityStatue);
     }
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+   
+    UIImage *bgimage = [UIImage imageWithColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar setBackgroundImage:bgimage forBarMetrics:UIBarMetricsDefault];
 }
 
 
