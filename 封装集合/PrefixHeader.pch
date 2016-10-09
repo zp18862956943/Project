@@ -54,10 +54,20 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 || ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0))
 
 
-#ifndef __OPTIMIZE__
-#define NSLog(...) NSLog(__VA_ARGS__)
+//#ifndef __OPTIMIZE__
+//#define NSLog(...) NSLog(__VA_ARGS__)
+//#else
+//#define NSLog(...){}
+//#endif
+
+#ifdef DEBUG
+
+#define NSLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+
 #else
-#define NSLog(...){}
+
+#define NSLog(...)
+
 #endif
 
 #endif /* PrefixHeader_pch */

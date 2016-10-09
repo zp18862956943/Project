@@ -32,7 +32,7 @@ static NetWorkingManager * defualt_shareMananger = nil;
     _dispatch_once(&onceToken, ^{
         
         if (defualt_shareMananger == nil) {
-            defualt_shareMananger = [[self alloc] initWithBaseURL:nil];
+            defualt_shareMananger = [[self alloc] initWithBaseURL:[NSURL URLWithString:@""]];
         }
     });
     return defualt_shareMananger;
