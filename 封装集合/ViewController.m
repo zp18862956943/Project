@@ -13,10 +13,24 @@
 #import "UIImage+Color.h"
 #import "NetWorkingManager.h"
 #import "UserDefaultsTools.h"
-
 #import "FifthViewController.h"
+#import "UIView+Animation.h"
+
+typedef NS_ENUM(NSInteger, Deviation) {
+    //以下是枚举成员
+    DeviationTrue = 0,
+    DeviationFalse = 1
+
+};
 
 @interface ViewController ()
+{
+    //记录是否偏移
+    Deviation devation;
+    //存储要偏移的点
+    CGPoint point;
+}
+@property(weak,nonatomic)UIButton *gETBtn;
 @end
 
 @implementation ViewController
@@ -25,6 +39,8 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor yellowColor];
+    
+    devation = DeviationFalse;
     
     NSMutableAttributedString *str = [[NSMutableAttributedString alloc]initWithString:@"嘻嘻"];
     [self set_Title:str];
@@ -37,14 +53,22 @@
     GETBtn.frame = CGRectMake(20, 60 + 65, 100, 20);
     [self.view addSubview:GETBtn];
     
+    self.gETBtn = GETBtn;
+    
     
     UIButton *POSTBtn = [BaseButton createBtnTitle:@"POST" titleColor:[UIColor blackColor] bgImageName:nil backGroundColor:[UIColor redColor] target:self action:@selector(clickPOST)];
     POSTBtn.frame = CGRectMake(160, 60 + 65, 100, 20);
     [self.view addSubview:POSTBtn];
     
     UIButton *PUSHBtn = [BaseButton createBtnTitle:@"PUSH" titleColor:[UIColor blackColor] bgImageName:nil backGroundColor:[UIColor redColor] target:self action:@selector(clickPUSH)];
-    PUSHBtn.frame = CGRectMake(100, 60 + 100 , 100, 20);
+    PUSHBtn.frame = CGRectMake(100, 160 , 100, 20);
     [self.view addSubview:PUSHBtn];
+    
+    UIButton *AnimationBtn = [BaseButton createBtnTitle:@"Animation" titleColor:[UIColor blackColor] bgImageName:nil backGroundColor:[UIColor redColor] target:self action:@selector(clickAnimation)];
+    AnimationBtn.frame = CGRectMake(100, 200 , 100, 20);
+    [self.view addSubview:AnimationBtn];
+    
+    
     
     
 //NSUserDefault
@@ -138,6 +162,39 @@
 -(void)title_click_event:(UIView *)sender
 {
     NSLog(@"点击了标题");
+}
+
+
+-(void)clickAnimation
+{
+    if (devation == DeviationFalse) {
+        devation = DeviationTrue;
+        point = CGPointMake(200, 200);
+    }else
+    {
+        devation = DeviationFalse;
+         point = CGPointMake(20, 125);
+    }
+    
+    
+#pragma mark-移动
+    [self.gETBtn moveTo:point duration:0.5 option:0];
+    //withSnapBack 回弹
+//    [self.gETBtn raceTo:point withSnapBack:NO];
+#pragma mark- 伸缩
+//    [self.gETBtn scale:0.5 x:200 y:200 delegate:nil callback:nil];
+#pragma mark -绕中心点转动 方向
+//    [self.gETBtn spinClockwise:0.5];
+//    [self.gETBtn spinCounterClockwise:0.5];
+#pragma 旋转后删除
+//    [self.gETBtn drainAway:1.0];
+#pragma 视图变透明
+//    [self.gETBtn changeAlpha:0.1 secs:0.5];
+#pragma 闪一下，是否连续
+//    [self.gETBtn pulse:0.5 continuously:NO];
+//    [self.gETBtn addSubviewWithFadeAnimation:self.view];
+    
+    
 }
 
 @end
